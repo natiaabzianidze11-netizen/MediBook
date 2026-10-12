@@ -1,0 +1,19 @@
+.page-title {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-lg);
+}
+
+/* სტატისტიკის კარტების ბადე: auto-fit, მედია-ქიერების გარეშე */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-md);
+  }
+}

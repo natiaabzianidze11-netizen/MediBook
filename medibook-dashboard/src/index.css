@@ -1,0 +1,71 @@
+/* ===== Design Tokens (CSS ცვლადები) ===== */
+:root {
+  /* ფერები */
+  --color-primary: #0b6e76;
+  --color-primary-dark: #08545b;
+  --color-primary-soft: #e1f1f2;
+  --color-bg: #eef4f5;
+  --color-surface: #ffffff;
+  --color-text: #12303a;
+  --color-text-muted: #4f6770;
+  --color-border: #d5e3e6;
+  --color-success: #187a42;
+  --color-star: #946200;
+
+  /* დაშორებები (Spacing) — 8px ბადე (4px მხოლოდ ნახევარი ნაბიჯი) */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+
+  /* საზღვრის რადიუსი და ჩრდილი */
+  --radius-md: 12px;
+  --shadow-sm: 0 2px 6px rgba(18, 48, 58, 0.08);
+
+  /* ტიპოგრაფიული მასშტაბი */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 32px;
+
+  /* მინიმალური ინტერაქტიული ზომა (touch target) */
+  --touch-size: 44px;
+
+  /* ფონტი */
+  --font-main: 'Segoe UI', 'Noto Sans Georgian', Sylfaen, Tahoma, sans-serif;
+}
+
+/* ===== საბაზისო reset ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  min-height: var(--touch-size);
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #7cc4c9;
+  outline-offset: 2px;
+}

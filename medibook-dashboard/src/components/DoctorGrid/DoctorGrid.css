@@ -1,0 +1,90 @@
+.doctor-grid__title {
+  margin-bottom: var(--space-md);
+  font-size: var(--font-size-lg);
+}
+
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-md);
+}
+
+.doctor-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background-color: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.doctor-card__top {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.doctor-card__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.doctor-card__name {
+  font-size: var(--font-size-md);
+  line-height: 1.3;
+}
+
+.doctor-card__specialty {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.doctor-card__clinic {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.doctor-card__bottom {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.doctor-card__rating {
+  font-weight: 700;
+  color: var(--color-star);
+}
+
+.doctor-card__price {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+}
+
+.doctor-card__btn {
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-md);
+}
+
+.doctor-card__btn--booked,
+.doctor-card__btn--booked:hover {
+  background: var(--color-success);
+  cursor: default;
+}
+
+.doctor-card__btn:hover {
+  background: var(--color-primary-dark);
+}

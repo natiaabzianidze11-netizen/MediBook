@@ -1,0 +1,38 @@
+/* მაკრო-ლეიაუთი: CSS Grid.
+   დესკტოპზე: მარცხნივ Sidebar (260px), მარჯვნივ დანარჩენი სივრცე (1fr) */
+.layout {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    'sidebar header'
+    'sidebar main'
+    'sidebar footer';
+}
+
+.layout > .header { grid-area: header; }
+.layout > .sidebar { grid-area: sidebar; }
+.layout > .layout__main {
+  grid-area: main;
+  padding: var(--space-lg);
+  min-width: 0;
+}
+.layout > .footer { grid-area: footer; }
+
+/* მობილური: ერთი სვეტი, Sidebar იმალება და იხსნება ღილაკით */
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+      'header'
+      'sidebar'
+      'main'
+      'footer';
+  }
+
+  .layout > .layout__main {
+    padding: var(--space-md);
+  }
+}

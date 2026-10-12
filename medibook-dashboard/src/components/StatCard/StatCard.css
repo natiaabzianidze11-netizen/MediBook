@@ -1,0 +1,43 @@
+/* Flexbox: იკონა და ტექსტი გვერდიგვერდ */
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background-color: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.stat-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  background: var(--color-primary-soft);
+  font-size: var(--font-size-xl);
+}
+
+.stat-card__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-card__label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.stat-card__value {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.stat-card__change {
+  font-size: var(--font-size-xs);
+  color: var(--color-success);
+}
